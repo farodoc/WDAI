@@ -165,6 +165,7 @@ function startTimer(time)
         }
         if (time < 0)
         {
+            var idx = picked_questions[que_count];
             clearInterval(counter);
             timeText.textContent = "Time Off";
             const allOptions = option_list.children.length;
@@ -172,19 +173,19 @@ function startTimer(time)
             switch (correctAns)
             {
                 case "A":
-                    correctAns = questions[que_count].A;
+                    correctAns = questions[idx].A;
                     break;
 
                 case "B":
-                    correctAns = questions[que_count].B;
+                    correctAns = questions[idx].B;
                     break;
 
                 case "C":
-                    correctAns = questions[que_count].C;
+                    correctAns = questions[idx].C;
                     break;
 
                 case "D":
-                    correctAns = questions[que_count].D;
+                    correctAns = questions[idx].D;
                     break;
             }
 
