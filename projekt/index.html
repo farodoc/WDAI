@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Strona główna</title>
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar topnav navbar-expand-md">
+            <a class="navbar-brand mr-auto" href="#">
+                <div id="home-button">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+            </a>
+
+            <a href="https://github.com/farodoc" target="_blank">
+                <ion-icon name="logo-github" id="git"></ion-icon>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="container">
+            <div class="square-container">
+                <div class="square" id="demo">
+                    <div class="image">
+                        <img src="img/demomemo.jpg" />
+                    </div>
+                    <div>
+                        <a href="memo_game/memoIndex.html">
+                            <button class="play-button" style="outline: none;">
+                                <ion-icon name="play-outline" style="font-size: 50px;"></ion-icon>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="square" id="text">
+                    <div>
+                        <h1 style="color:orangered;">Witcher Memory Game</h1>
+                        <p>A simple memory game with images from the Witcher Gwent game. There are 3 difficulty levels to choose from:
+                        <span id="easytxt">easy</span>,  
+                        <span id="mediumtxt">medium</span>  and  
+                        <span id="hardtxt">hard</span>. Each one consisting of 3/6/9 sets of cards respectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="square-container">
+                <div class="square to_shrink" id="text">
+                    <h1 style="color: #007bff;">Quiz</h1>
+                    <p>A not so simple quiz with diverse selection of questions. Each set consisting of 10 random questions. Discover how well-rounded your knowledge truly is.</p>
+                </div>
+
+                <div class="square" id="demo">
+                    <div class="image">
+                        <img src="img/demoquiz.jpg" style="width:300px;"/>
+                    </div>
+                    <div>
+                        <a href="quiz/quizIndex.html">
+                            <button class="play-button" style="outline: none;">
+                                <ion-icon name="play-outline" style="font-size: 50px;"></ion-icon>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2023 Jakub Konopka | Kontakt <ion-icon name="mail-outline" id="mail"></ion-icon> jakubkonopka@student.agh.edu.pl</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

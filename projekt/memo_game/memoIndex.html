@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Memory Game</title>
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="memoStyle.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar topnav">
+            <a class="navbar-brand" href="../index.html">
+                <div id="home-button">
+                    <ion-icon name="home-outline" id="home"></ion-icon>
+                </div>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <div id="levels">
+                <button class="level-selector" id="lvleasy" onclick="setlevel(1)">easy</button>
+                <button class="level-selector" id="lvlmedium" onclick="setlevel(2)">medium</button>
+                <button class="level-selector" id="lvlhard" onclick="setlevel(3)">hard</button>
+            </div>
+
+            <div class="board" id="board1">
+
+                <div class="card" id="c1-0"></div>
+                <div class="card" id="c1-1"></div>
+                <div class="card" id="c1-2"></div>
+
+                <div class="card" id="c1-3"></div>
+                <div class="card" id="c1-4"></div>
+                <div class="card" id="c1-5"></div>
+
+            </div>
+
+            <div class="board" id="board2">
+
+                <div class="card" id="c2-0"></div>
+                <div class="card" id="c2-1"></div>
+                <div class="card" id="c2-2"></div>
+                <div class="card" id="c2-3"></div>
+
+                <div class="card" id="c2-4"></div>
+                <div class="card" id="c2-5"></div>
+                <div class="card" id="c2-6"></div>
+                <div class="card" id="c2-7"></div>
+
+                <div class="card" id="c2-8"></div>
+                <div class="card" id="c2-9"></div>
+                <div class="card" id="c2-10"></div>
+                <div class="card" id="c2-11"></div>
+
+            </div>
+
+            <div class="board" id="board3">
+
+                <div class="card" id="c3-0"></div>
+                <div class="card" id="c3-1"></div>
+                <div class="card" id="c3-2"></div>
+                <div class="card" id="c3-3"></div>
+                <div class="card" id="c3-4"></div>
+
+                <div class="card" id="c3-5"></div>
+                <div class="card" id="c3-6"></div>
+                <div class="card" id="c3-7"></div>
+                <div class="card" id="c3-8"></div>
+                <div class="card" id="c3-9"></div>
+
+                <div class="card" id="c3-10"></div>
+                <div class="card" id="c3-11"></div>
+                <div class="card" id="c3-12"></div>
+                <div class="card" id="c3-13"></div>
+                <div class="card" id="c3-14"></div>
+
+                <div class="card" id="c3-15"></div>
+                <div class="card" id="c3-16"></div>
+                <div class="card" id="c3-17"></div>
+
+            </div>
+
+
+            <div class="score">Turn counter: 0</div>
+
+            <div id="restart">
+                <div id="restart-button" onclick="resetPage()">
+                    <ion-icon name="reload-outline" id="reset"></ion-icon>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="memoScript.js"></script>
+
+</body>
+</html>
